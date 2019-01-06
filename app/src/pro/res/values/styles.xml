@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <!--the app-->
+    <string name="app_name">Parallel Video Recorder Pro</string>
+    <bool name="is_pro">true</bool>
+
+</resources>

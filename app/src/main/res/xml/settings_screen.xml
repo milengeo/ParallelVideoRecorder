@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:summary="Username and password information"
+        android:title="General Settings"
+        android:layout="@layout/pref_cat_layout"
+        >
+
+        <EditTextPreference
+            android:key="output_folder"
+            android:title="Output folder"
+            android:summary=" The output folder for newly recorded videos"
+        />
+
+        <EditTextPreference
+            android:numeric="integer"
+            android:key="max_duration"
+            android:title="Maximum duration, in minutes"
+            android:summary=" Maximum duration of new videos, in minutes"
+            />
+
+        <SwitchPreference
+            android:key="disable_animations"
+            android:defaultValue="false"
+            android:title="Disable animations"
+            android:summary="Disable animated transitions between activities"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
+
+

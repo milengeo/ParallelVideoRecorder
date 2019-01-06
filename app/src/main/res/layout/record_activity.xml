@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_port_case"
+    android:background="#0000cc"
+    >
+
+
+    <SurfaceView
+        android:id="@+id/id_port_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </SurfaceView>
+
+
+    <!--<ZoomControls-->
+        <!--android:id="@+id/record_zoomcontrols"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--/>-->
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/record_livi_flows"
+              android:visibility="visible"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:choiceMode="singleChoice"
+              android:layout_marginTop="33dp"
+              android:divider="@null"
+              android:dividerHeight="0dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.0x"
+        android:id="@+id/record_tevi_zoom_info"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:textColor="#ff8800"
+        android:textSize="22sp"
+        android:textStyle=""
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:id="@+id/record_tevi_time_info"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:textColor="#ff8800"
+        android:textSize="22sp"
+        android:textStyle=""
+        />
+
+    <ImageButton
+        android:id="@+id/record_pubu_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_start_record"
+        android:layout_marginRight="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageButton
+        android:visibility="gone"
+        android:id="@+id/record_pubu_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_stop_record"
+        android:layout_marginRight="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+
+
+
+</RelativeLayout>

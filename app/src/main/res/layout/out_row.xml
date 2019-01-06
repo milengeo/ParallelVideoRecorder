@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="9dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/out_row_icon1"
+            android:layout_width="96dip"
+            android:layout_height="96dip"
+            android:layout_margin="5dip"
+            >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/out_row_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/out_row_icon1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dip"
+            android:layout_marginLeft="5dip"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/out_row_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/out_row_icon1"
+            android:layout_below="@+id/out_row_name"
+            android:layout_marginTop="16dip"
+            android:layout_marginLeft="5dip"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/out_row_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/out_row_icon1"
+            android:layout_below="@+id/out_row_size"
+            android:layout_marginTop="16dip"
+            android:layout_marginLeft="5dip"
+            >
+        </TextView>
+
+
+
+
+        <TextView
+            android:id="@+id/loc_row_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/out_row_name"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/out_row_size"
+            android:layout_marginRight="5dip">
+        </TextView>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                  <!--android:layout_width="wrap_content"-->
+                  <!--android:layout_height="wrap_content"-->
+                  <!--android:orientation="horizontal">-->
+
+        <CheckBox
+            android:id="@+id/main_row_chkbox"
+            android:layout_width="64dp"
+            android:layout_height="fill_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+    <!--</LinearLayout>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/row_prof_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/ListStyleName"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/row_prof_resolution"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/row_prof_name"
+                style="@style/ListStyleVal"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/row_prof_bitrate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/row_prof_resolution"
+                style="@style/ListStyleVal"
+                android:text="3333"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:padding="16dp"-->
+        <!-->-->
+
+        <!--<RelativeLayout-->
+            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/row_prof_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/ListStyleName"-->
+                <!-->-->
+            <!--</TextView>-->
+            <!--<TextView-->
+                <!--android:id="@+id/row_prof_fps"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/row_prof_name"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--style="@style/ListStyleVal"-->
+                <!-->-->
+            <!--</TextView>-->
+
+        <!--</RelativeLayout>-->
+
+
+
+        <!--&lt;!&ndash; second column &ndash;&gt;-->
+
+        <!--<RelativeLayout-->
+            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content">-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/row_prof_resolution"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/ListStyleVal"-->
+                <!-->-->
+            <!--</TextView>-->
+            <!--<TextView-->
+                <!--android:id="@+id/row_prof_bitrate"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/row_prof_resolution"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--style="@style/ListStyleVal"-->
+                <!-->-->
+            <!--</TextView>-->
+
+        <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:scrollbarStyle="outsideOverlay">
+
+
+    <LinearLayout
+        android:id="@+id/new_host_TopLayout"
+        android:minWidth = "555dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextViewTitle"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter details about the profile"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/section_color"
+            android:textStyle="bold"
+            >
+        </TextView>
+        <View style="@style/Divider2dpCaption"
+              android:layout_marginBottom="8dp"
+        />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="11dp">
+            <TextView
+                android:text = "Profile name:"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/profile_edit_name"
+                android:inputType="text"
+                android:hint="ex: my site"
+                android:layout_width="0dp"
+                android:layout_weight="@integer/new_profile_column2_weight"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp">
+            <TextView
+                android:text = "Video resolution:"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:id="@+id/profile_spn_resolution"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="@integer/new_profile_column2_weight"
+                />
+        </LinearLayout>
+
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="11dp">-->
+            <!--<TextView-->
+                <!--android:text = "Frame rate (FPS):"-->
+                <!--style="@android:style/TextAppearance.Medium"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="wrap_content"/>-->
+            <!--<Spinner-->
+                <!--android:id="@+id/new_prof_spn_fps"-->
+                <!--android:hint="output frame rate"-->
+                <!--android:text = "30"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="@integer/new_profile_column2_weight"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:entries="@array/new_fps_list"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp">
+            <TextView
+                android:text = "Output bitrate (kbps):"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:id="@+id/profile_spn_bitrate"
+                android:text = "1000"
+                android:layout_width="0dp"
+                android:layout_weight="@integer/new_profile_column2_weight"
+                android:layout_height="wrap_content"
+                android:entries="@array/new_bitrate_list"
+                />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp">
+            <Button
+                android:id="@+id/profile_button_Cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/str_cancel"
+                android:layout_marginTop="11dp"
+                android:onClick="clickCancel"/>
+
+            <Button
+                android:id="@+id/profile_button_Ok"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/str_ok"
+                android:layout_marginTop="11dp"
+                android:onClick="clickOk"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
